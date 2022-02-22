@@ -1,3 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+html {
+  font-size: 16px;
+}
+
+body {
+  color: #000;
+  background-color: #fff;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+button {
+  border: none;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Work Sans", sans-serif;
+  background-color: #202632;
+}
+
+.card {
+  width: 90%;
+  max-width: 40rem;
+  height: 60%;
+  border-radius: 1rem;
+  position: relative;
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-columns: 85%;
+  justify-content: center;
+  align-items: center;
+  background-color: #313a49;
+}
+.card__advice {
+  margin: auto auto 0;
+}
+.card__advice-h {
+  color: #51ffa9;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.card__message {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.card__message-p {
+  color: #cedce9;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.card__separator {
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+.card__separator-hr {
+  width: 100%;
+  border: none;
+  height: 1px;
+  color: #808080;
+  background-color: #808080;
+}
+.card__separator-icon {
+  width: 4rem;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -0.8rem;
+  right: 0;
+  left: 0;
+  margin: auto;
+  background-color: #313a49;
+}
+.card__separator-icon-img {
+  height: 1.6rem;
+}
+.card__change-button {
+  position: absolute;
+  cursor: pointer;
+  height: 4.4rem;
+  width: 4.4rem;
+  border-radius: 50%;
+  background-color: #51ffa9;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: -2.2rem;
+  background-image: url(../img/dice.svg);
+  background-size: 2rem 2rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    width: 50%;
+    height: 60%;
+    grid-template-rows: 1fr 4fr 2fr;
+  }
+  .card__advice {
+    margin-bottom: 0;
+  }
+  .card__message {
+    display: flex;
+    align-items: center;
+  }
+  .card__message-p {
+    font-size: 2rem;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
